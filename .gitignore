@@ -137,3 +137,5 @@ logs/app.log
 
 # For Mac
 .DS_Store
+
+infra/.terraform/providers/
