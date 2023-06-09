@@ -15,6 +15,7 @@ BUCKET = str(os.getenv("AWS_BUCKET"))
 VERSION = str(os.getenv("VERSION"))
 
 model_candidates = ["sgd_classifier_ctr_model", "sgd_classifier_ctr_optuna_model"]
+old_model_candidates = ["sgd_classifier_ctr_model"]
 model_preprocessor_list = [
     get_model_preprocessor(bucket=BUCKET, model_name=model_name, version=VERSION) for model_name in model_candidates
 ]

@@ -29,6 +29,7 @@
             "logDriver": "awslogs",
             "options": {
                 "awslogs-create-group": "true",
+                "awslogs-region": "ap-northeast-1",
                 "awslogs-group": "/ecs/mlops-handson-ml-pipeline",
                 "awslogs-stream-prefix": "ecs"
             }

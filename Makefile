@@ -54,18 +54,7 @@ predict: ## Request prediction
 	curl -X 'POST' 'http://localhost:${PORT}/predict' \
 	    -H 'accept: application/json' \
 	    -H 'Content-Type: application/json' \
-	    -d '{"hour": "14102100", \
-	         "banner_pos": "0", \
-	         "site_id": "1fbe01fe", \
-	         "site_domain": "f3845767", \
-	         "site_category": "28905ebd", \
-	         "app_id": "ecad2386", \
-	         "app_domain": "7801e8d9", \
-	         "app_category": "07d7df22", \
-	         "device_id": "a99f214a", \
-	         "device_ip": "ddd2926e", \
-	         "device_model": "44956a24", \
-	         "device_type": "1"}'
+	    -d '{"hour": "14102100", "banner_pos": "0", "site_id": "1fbe01fe", "site_domain": "f3845767", "site_category": "28905ebd", "app_id": "ecad2386", "app_domain":"7801e8d9", "app_category": "07d7df22", "device_id": "a99f214a", "device_ip": "ddd2926e", "device_model": "44956a24", "device_type": "1"}'
 
 predict-tmp: ## Request prediction
 	curl -X 'POST' 'http://localhost:${PORT}/predict' \
